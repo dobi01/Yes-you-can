@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+.title h1 {
+  letter-spacing: 2px;
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 200px;
+}
+.title p {
+  font-size: 23px;
+}

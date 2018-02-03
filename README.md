@@ -1,2 +1,2 @@
-# task-16.4
-learning Webpack - loaders
+# Yes-you-can
+learning Webpack - loaders, plugins, Hot Module Replacement

@@ -1,0 +1,23 @@
+.TodoList ul {
+  padding-left: 0;
+}
+
+.TodoList ul li {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 15px;
+  position: relative;
+  padding-left: 40px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.TodoList button {
+  background: inherit;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  font-size: 17px;
+}

@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
+body {
+  background-color: #E40070;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .TodoApp {
-    background-color: #F5F5F5;
-    color: #222;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100vw;
-    height: 100vh;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-align: center;
 }

@@ -1,12 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
-
 .title h1 {
   letter-spacing: 2px;
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  transition: transform 2s, color 2s;
 }
-.title p {
+.title span {
   font-size: 23px;
-  margin-bottom: 5px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 3px solid pink;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+  margin-bottom: 10px;
+  transition: transform 2s;
+  color: pink;
+}
+
+.title span:hover {
+  transform: scale(1.2,1.2);
+}
+
+.title h1:hover {
+  transform: scale(1.1,1.1);
+  color: pink;
 }

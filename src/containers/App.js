@@ -1,8 +1,9 @@
 import React from 'react';
-import uuid from 'uuid/v4';
+import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title';
 import TodoList from '../components/TodoList';
+import TodoForm from '../components/TodoForm';
 
 class App extends React.Component {
   constructor(props){
@@ -17,7 +18,7 @@ class App extends React.Component {
           text: 'wash the dishes'
         }, {
         id: 3,
-          text: 'feed my cat'
+          text: 'walking meditation 10 min'
         }
       ]
     };
@@ -41,6 +42,7 @@ class App extends React.Component {
     return (
       <div className = {style.TodoApp}>
         <Title listLength = {this.state.data.length}/>
+        <TodoForm addItem = {this.addTodo.bind(this)}/>
         <TodoList data = {this.state.data} removeItem = {this.removeTodo.bind(this)}/>
       </div>
     );

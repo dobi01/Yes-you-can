@@ -6,7 +6,9 @@ class Title extends React.Component {
     return (
       <div className={style.title}>
         <h1>Yes, you can</h1>
-        <p>things to be done: {this.props.listLength}</p>
+        <span>
+           {this.props.listLength}
+        </span>
       </div>
     );
   }

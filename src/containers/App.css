@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
 body {
   background-color: #E40070;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .TodoApp {

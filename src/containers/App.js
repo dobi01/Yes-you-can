@@ -12,10 +12,10 @@ class App extends React.Component {
       data: [
         {
         id: 1,
-          text: 'clean bathroom'
+          text: 'clean the bathroom'
         }, {
         id: 2,
-          text: 'wash the dishes'
+          text: 'wash dishes'
         }, {
         id: 3,
           text: 'walking meditation 10 min'

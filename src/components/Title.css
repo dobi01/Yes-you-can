@@ -1,26 +1,27 @@
 .title h1 {
   letter-spacing: 2px;
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 200px;
-  margin-bottom: 30px;
+  font-size: 180px;
+  margin-bottom: 50px;
   transition: transform 2s, color 2s;
+  position: relative;
 }
+
 .title span {
-  font-size: 23px;
+  font-size: 28px;
   font-weight: bold;
   border-radius: 50%;
   border: 3px solid pink;
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
-  line-height: 28px;
+  line-height: 40px;
   margin-bottom: 10px;
-  transition: transform 2s;
+  padding-left: 2px;
   color: pink;
-}
-
-.title span:hover {
-  transform: scale(1.2,1.2);
+  position: absolute;
+  top: 20px;
+  right: -20px;
 }
 
 .title h1:hover {

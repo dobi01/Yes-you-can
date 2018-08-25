@@ -5,10 +5,11 @@ class Title extends React.Component {
   render() {
     return (
       <div className={style.title}>
-        <h1>Yes, you can</h1>
-        <span>
+        <h1>Yes, you can
+          <span>
            {this.props.listLength}
-        </span>
+          </span>
+        </h1>
       </div>
     );
   }

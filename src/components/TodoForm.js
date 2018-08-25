@@ -26,12 +26,13 @@ class TodoForm extends React.Component {
     });
   }
   render() {
+    let listLength = this.props.listLength;
     return (
       <div>
         <form onSubmit = {event => this.onSubmit(event)}>
           <input
             type = "text"
-            placeholder = "Give yourself a challenge"
+            placeholder = {listLength === 0 ? 'Wow, you made it!' : 'Give yourself a challenge'}
             onChange = {event => this.onChange(event)}
             onKeyUp = {event => this.keyUp(event)}
             value = {this.state.newItem}/>

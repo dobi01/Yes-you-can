@@ -9,7 +9,9 @@ class TodoForm extends React.Component {
     };
   }
   onChange(event) {
-    this.setState({newItem: event.target.value});
+    this.setState({
+      newItem: event.target.value
+    });
   }
   keyUp(event) {
     if (event.keyCode === 13) {
@@ -19,18 +21,20 @@ class TodoForm extends React.Component {
   onSubmit(event) {
     event.preventDefault();
     this.props.addItem(this.state.newItem);
-    this.setState({newItem: ''});
+    this.setState({
+      newItem: ''
+    });
   }
   render() {
     return (
       <div>
         <form onSubmit = {event => this.onSubmit(event)}>
           <input
-          type = "text"
-          placeholder = "Give yourself a challenge"
-          onChange = {event => this.onChange(event)}
-          onKeyUp = {event => this.keyUp(event)}
-          value = {this.state.newItem}/>
+            type = "text"
+            placeholder = "Give yourself a challenge"
+            onChange = {event => this.onChange(event)}
+            onKeyUp = {event => this.keyUp(event)}
+            value = {this.state.newItem}/>
         </form>
       </div>
     );

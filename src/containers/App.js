@@ -6,36 +6,40 @@ import TodoList from '../components/TodoList';
 import TodoForm from '../components/TodoForm';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       data: [
         {
-        id: 1,
-          text: 'clean the bathroom'
+          id: 1,
+          text: 'workout 1 h'
         }, {
-        id: 2,
-          text: 'wash dishes'
+          id: 2,
+          text: 'smile'
         }, {
-        id: 3,
-          text: 'walking meditation 10 min'
+          id: 3,
+          text: 'meditate 10 min'
         }
       ]
     };
   }
 
-  addTodo(val){
+  addTodo(val) {
     const todo = {
       text: val,
       id: uuid.v4()
     };
     const data = [...this.state.data, todo];
-    this.setState({data});
+    this.setState({
+      data
+    });
   }
 
   removeTodo(id) {
     const remainder = this.state.data.filter(todo => todo.id !== id);
-    this.setState({data: remainder});
+    this.setState({
+      data: remainder
+    });
   }
 
   render() {

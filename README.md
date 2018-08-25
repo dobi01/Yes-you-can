@@ -1,2 +1,5 @@
 # Yes-you-can
-learning Webpack - loaders, plugins, Hot Module Replacement
+
+Kodilla web developer bootcamp
+
+Task 16.4-6 - learning Webpack configuration - loaders, plugins, hot module replacement
